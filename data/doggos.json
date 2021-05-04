@@ -1,0 +1,74 @@
+{
+  "Doggos": [
+    {
+      "name": "Bella",
+      "perks": ["Cheerful", "Gentle", "Friendly", "Intelligent"],
+      "intelligence": 7,
+      "photo": "http://localhost:3000/img/doggos/dog1.jpg",
+      "dateOfBirth": "Tue Jun 07 2016 22:13:50 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Charlie",
+      "perks": ["Corageous", "Intelligent", "Loyal", "Watchful"],
+      "intelligence": 3,
+      "photo": "http://localhost:3000/img/doggos/dog2.jpg",
+      "dateOfBirth": "Tue Apr 11 2017 18:31:09 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Luna",
+      "perks": ["Intelligent", "Kind", "Friendly", "Confident"],
+      "intelligence": 4,
+      "photo": "http://localhost:3000/img/doggos/dog3.jpg",
+      "dateOfBirth": "Thu Oct 29 2020 18:45:41 GMT+0100 (Central European Standard Time)"
+    },
+    {
+      "name": "Morgan",
+      "perks": ["Playful", "Sociable", "Friendly", "Lively", "Patient"],
+      "intelligence": 58,
+      "photo": "http://localhost:3000/img/doggos/dog4.jpg",
+      "dateOfBirth": "Mon Oct 22 2018 23:31:29 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Max",
+      "perks": ["Friendly", "Docile", "Willful", "Gregarious"],
+      "intelligence": 77,
+      "photo": "http://localhost:3000/img/doggos/dog5.jpg",
+      "dateOfBirth": "Fri Apr 15 2016 14:44:06 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Cooper",
+      "perks": ["Gentle", "Intelligent", "Even Tempered", "Determined"],
+      "intelligence": 72,
+      "photo": "http://localhost:3000/img/doggos/dog6.jpg",
+      "dateOfBirth": "Fri Feb 26 2021 06:45:09 GMT+0100 (Central European Standard Time)"
+    },
+    {
+      "name": "Hutch",
+      "perks": ["Intelligent", "Faithful", "Trainable", "Instinctual"],
+      "intelligence": 2,
+      "photo": "http://localhost:3000/img/doggos/dog7.jpg",
+      "dateOfBirth": "Tue Jul 14 2015 18:59:43 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Stacy",
+      "perks": ["Intelligent", "Corageous", "Fearless", "Confident"],
+      "intelligence": 9,
+      "photo": "http://localhost:3000/img/doggos/dog8.jpg",
+      "dateOfBirth": "Mon May 27 2013 02:04:14 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Pepper",
+      "perks": ["Intelligent", "Trainable", "Boisterous", "Cooperative"],
+      "intelligence": 9,
+      "photo": "http://localhost:3000/img/doggos/dog9.jpg",
+      "dateOfBirth": "Wed Aug 28 2019 18:35:33 GMT+0200 (Central European Summer Time)"
+    },
+    {
+      "name": "Ace",
+      "perks": ["Independent", "Intelligent", "Corageous", "Confident"],
+      "intelligence": 27,
+      "photo": "http://localhost:3000/img/doggos/dog10.jpg",
+      "dateOfBirth": "Thu Oct 29 2020 18:45:41 GMT+0100 (Central European Standard Time)"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "DoggoCrew",
+  "short_name": "DC",
+  "lang": "en-US",
+  "start_url": "/",
+  "background_color": "#485563",
+  "theme_color": "#ed143d",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/img/icons/dog-16-203766.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/dog-32-203766.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/dog-64-203766.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/dog-72-203766.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/dog-144-203766.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/dog-512-203766.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
