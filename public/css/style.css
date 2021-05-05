@@ -361,14 +361,23 @@ p {
 
 #ads .container {
     min-height: fit-content;
+    flex-direction: column;
+    padding: 2rem 0 2rem 0;
 }
-#ads .doggos-deals iframe{
+
+#ads .container div {
+  display: flex;
+  gap: 5rem;
+}
+
+#ads .container .ads-bottom .doggos-deals iframe{
     margin: 40px auto 0 auto;
     display: block;
 }
 
-#ads .doggos-deals .section-title {
+#ads .section-title {
 	color: white;
+  margin-bottom: 5rem;
 }
 
 /* End Deals section */

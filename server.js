@@ -6,11 +6,6 @@ const dataPath = "./data/doggos.json";
 const server = express();
 const PORT = 3000;
 
-// MOCK SLOW DOWN IMAGE API
-server.use("/img/doggos/dog*.jpg", (req, res, next) => {
-  setTimeout(next, 3000);
-});
-
 server.use(express.static(__dirname + "/public"));
 
 // CRP demo, no need to touch
@@ -24,13 +19,28 @@ server.use("/crpdemocss.css", (req, res, next) => {
 });
 
 server.get("/crpdemojs.js", (req, res) => {
-  res.sendFile(path.join(__dirname + "/crpdemojs.js"));
+  res.sendFile(path.join(__dirname + "/DEMOS/crpdemojs.js"));
 });
 server.get("/crpdemocss.css", (req, res) => {
-  res.sendFile(path.join(__dirname + "/crpdemocss.css"));
+  res.sendFile(path.join(__dirname + "/DEMOS/crpdemocss.css"));
 });
 
 /* END CRP demo */
+
+// CODE SPLITTING demo, no need to touch,
+server.get("/codesplittingdemo", (req, res) => {
+  res.sendFile(path.join(__dirname + "/DEMOS/codesplittingdemo/index.html"));
+});
+
+server.get("/codesplittingdemo.js", (req, res) => {
+  res.sendFile(path.join(__dirname + "/DEMOS/codesplittingdemo/index.js"));
+});
+
+// END CODESPLITTING demo
+
+server.get("/codesplittingdemoapp.js", (req, res) => {
+  res.sendFile(path.join(__dirname + "/DEMOS/codesplittingdemo/app.js"));
+});
 
 server.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));

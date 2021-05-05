@@ -192,8 +192,9 @@
       
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="/img/icons/favicon.ico" />
-  <!-- I WILL BLOCK THE RENDERING OF WHATS BELOW INCLUDING THE EXECUTING OF JS --> -->
+  <!-- I WILL BLOCK THE RENDERING OF WHATS BELOW INCLUDING THE EXECUTING OF JS -->
   <!-- <link rel="stylesheet" href="/crpdemocss.css"> -->
  
   <!-- I WILL BLOCK THE RENDERING OF WHATS BELOW -->
@@ -201,8 +202,9 @@
   
   <!-- I WILL NOT BLOCK THE RENDERING OF THE SCRIPT AND HTML BELOW -->
   <!-- <script async src="/crpdemojs.js"></script> -->
-  
+  <link rel="manifest" href="/manifest">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="apple-touch-icon" href="/img/icons/dog-144-203766.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <title>DoggoCrew Website</title>
@@ -298,9 +300,17 @@
   <!-- Ad Section -->
   <section id="ads">
     <div class="ads container">
-      <div class="doggos-deals">
-        <h1 class="section-title">Doggo <span>deals</span></h1>
-        <iframe src="http://localhost:3000/ad-space" width="300" height="580" scrolling="no" frameborder="0"></iframe>
+      <h1 class="section-title">Doggo <span>deals</span></h1>
+      <div>
+        <div class="doggos-deals">
+          <img src="/img/happydog.gif">
+        </div>
+        <div class="doggos-deals">
+          <iframe src="http://localhost:3000/ad-space" width="300" height="580" scrolling="no" frameborder="0"></iframe>
+        </div>
+        <div class="doggos-deals">
+          <img src="/img/swaggerdog.gif">
+        </div>
       </div>
     </div>
   </section>
@@ -337,5 +347,7 @@
   <!-- <script src="/crpdemojs.js"></script> -->
   <script src="./js/main.js"></script>
   <script src="./js/removedJsFile.js"></script>
+
+
 </body>
 </html>
