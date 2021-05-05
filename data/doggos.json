@@ -5,6 +5,7 @@
       "perks": ["Cheerful", "Gentle", "Friendly", "Intelligent"],
       "intelligence": 7,
       "photo": "http://localhost:3000/img/doggos/dog1.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog1-small.jpg",
       "dateOfBirth": "Tue Jun 07 2016 22:13:50 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -12,6 +13,7 @@
       "perks": ["Corageous", "Intelligent", "Loyal", "Watchful"],
       "intelligence": 3,
       "photo": "http://localhost:3000/img/doggos/dog2.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog2-small.jpg",
       "dateOfBirth": "Tue Apr 11 2017 18:31:09 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -19,6 +21,7 @@
       "perks": ["Intelligent", "Kind", "Friendly", "Confident"],
       "intelligence": 4,
       "photo": "http://localhost:3000/img/doggos/dog3.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog3-small.jpg",
       "dateOfBirth": "Thu Oct 29 2020 18:45:41 GMT+0100 (Central European Standard Time)"
     },
     {
@@ -26,6 +29,7 @@
       "perks": ["Playful", "Sociable", "Friendly", "Lively", "Patient"],
       "intelligence": 58,
       "photo": "http://localhost:3000/img/doggos/dog4.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog4-small.jpg",
       "dateOfBirth": "Mon Oct 22 2018 23:31:29 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -33,6 +37,7 @@
       "perks": ["Friendly", "Docile", "Willful", "Gregarious"],
       "intelligence": 77,
       "photo": "http://localhost:3000/img/doggos/dog5.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog5-small.jpg",
       "dateOfBirth": "Fri Apr 15 2016 14:44:06 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -40,6 +45,7 @@
       "perks": ["Gentle", "Intelligent", "Even Tempered", "Determined"],
       "intelligence": 72,
       "photo": "http://localhost:3000/img/doggos/dog6.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog6-small.jpg",
       "dateOfBirth": "Fri Feb 26 2021 06:45:09 GMT+0100 (Central European Standard Time)"
     },
     {
@@ -47,6 +53,7 @@
       "perks": ["Intelligent", "Faithful", "Trainable", "Instinctual"],
       "intelligence": 2,
       "photo": "http://localhost:3000/img/doggos/dog7.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog7-small.jpg",
       "dateOfBirth": "Tue Jul 14 2015 18:59:43 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -54,6 +61,7 @@
       "perks": ["Intelligent", "Corageous", "Fearless", "Confident"],
       "intelligence": 9,
       "photo": "http://localhost:3000/img/doggos/dog8.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog8-small.jpg",
       "dateOfBirth": "Mon May 27 2013 02:04:14 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -61,6 +69,7 @@
       "perks": ["Intelligent", "Trainable", "Boisterous", "Cooperative"],
       "intelligence": 9,
       "photo": "http://localhost:3000/img/doggos/dog9.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog9-small.jpg",
       "dateOfBirth": "Wed Aug 28 2019 18:35:33 GMT+0200 (Central European Summer Time)"
     },
     {
@@ -68,6 +77,7 @@
       "perks": ["Independent", "Intelligent", "Corageous", "Confident"],
       "intelligence": 27,
       "photo": "http://localhost:3000/img/doggos/dog10.jpg",
+      "photoSmall": "http://localhost:3000/img/doggos/dog10-small.jpg",
       "dateOfBirth": "Thu Oct 29 2020 18:45:41 GMT+0100 (Central European Standard Time)"
     }
   ]

@@ -52,9 +52,6 @@ $(document).ready(function () {
     $(".lng").html("Longitude: " + position.coords.longitude);
   };
 
-  $("#cookiesokay").click(() => {
-    $("#cookies").css("display", "none");
-  });
   $.ajax({
     url: "http://localhost:3000/doggos",
     success: function (result) {
@@ -75,7 +72,6 @@ $(document).ready(function () {
         </div>`;
         $(".all-doggos").append(doggoElement);
       });
-      $("#cookies").css("display", "block");
       navigator.geolocation.getCurrentPosition(showPosition);
     },
   });

@@ -357,6 +357,8 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	padding-top: 30px;
 	padding-bottom: 60px;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 }
 
 #ads .container {
@@ -629,46 +631,6 @@ p {
   margin: 5px 2px;
   color: white;
 }
-
-
-
-/* Cookie handler */
-
-#cookies {
-  display: none;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-}
-
-#cookies .cookie-locations {
-  color: white;
-}
-
-#cookies .cookie-locations .lat,
-#cookies .cookie-locations .lng{
-  font-weight: 600;
-}
-
-#cookies .cta {
-  margin-top: 0;
-  margin-left: 3rem;
-}
-
-#cookies .cookie-text{
-  color: white;
-  font-size: 18px;
-}
-
-#cookies .learn-more {
-  text-decoration: none;
-  margin-top: 8px
-}
-
-#cookies .learn-more:hover {
-  text-decoration: none;
-  color: blue;
-  margin-top: 8px
-}
-
 
 
 
@@ -985,7 +947,6 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }

@@ -11,11 +11,11 @@ server.use(express.static(__dirname + "/public"));
 // CRP demo, no need to touch
 
 server.use("/crpdemojs.js", (req, res, next) => {
-  setTimeout(next, 4000);
+  setTimeout(next, 6000);
 });
 
 server.use("/crpdemocss.css", (req, res, next) => {
-  setTimeout(next, 8000);
+  setTimeout(next, 10000);
 });
 
 server.get("/crpdemojs.js", (req, res) => {

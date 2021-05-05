@@ -202,11 +202,12 @@
   
   <!-- I WILL NOT BLOCK THE RENDERING OF THE SCRIPT AND HTML BELOW -->
   <!-- <script async src="/crpdemojs.js"></script> -->
+    <!-- I WILL NOT BLOCK THE RENDERING OF THE SCRIPT AND HTML BELOW -->
+  <!-- <script defer src="/crpdemojs.js"></script> -->
   <link rel="manifest" href="/manifest">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="apple-touch-icon" href="/img/icons/dog-144-203766.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <title>DoggoCrew Website</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.js"></script>
@@ -214,26 +215,6 @@
   <html manifest="/appcache">
 </head>
 <body>
-
-    <!-- Cookies -->
-    <section id="cookies">
-      <div class="d-flex justify-content-center container">
-        <div class="row">
-            <div class="d-flex flex-row justify-content-between align-items-center p-3">
-                <div class="d-flex flex-row align-items-center cookie-text">
-                    <div class="ml-2 mr-2">
-                      <p class="cookie-locations">Your location requires us to ask about cookies!
-                        <span class="lng"></span>
-                        <span class="lat"></span>
-                      </p>
-                      <span>We use cookeis to make this site woff. Do you want one?<br></span></div>
-                    <button id="cookiesokay" class="cta" type="button">Okay</button></div>
-                </div>
-          </div>
-      </div>
-    </section>
-
-  <!-- Cookies End -->
 
   <!-- Header -->
   <section id="header">
@@ -297,24 +278,6 @@
     </div>
   </section>
   <!-- End Service Section -->
-  <!-- Ad Section -->
-  <section id="ads">
-    <div class="ads container">
-      <h1 class="section-title">Doggo <span>deals</span></h1>
-      <div>
-        <div class="doggos-deals">
-          <img src="/img/happydog.gif">
-        </div>
-        <div class="doggos-deals">
-          <iframe src="http://localhost:3000/ad-space" width="300" height="580" scrolling="no" frameborder="0"></iframe>
-        </div>
-        <div class="doggos-deals">
-          <img src="/img/swaggerdog.gif">
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Ad Section -->
 
   <!-- Doggo Section -->
   <section id="doggos">
@@ -326,6 +289,25 @@
     </div>
   </section>
   <!-- End Doggo Section -->
+
+    <!-- Ad Section -->
+    <section id="ads">
+      <div class="ads container">
+        <h1 class="section-title">Doggo <span>deals</span></h1>
+        <div>
+          <div class="doggos-deals">
+            <img src="/img/happydog.gif">
+          </div>
+          <div class="doggos-deals">
+            <iframe src="http://localhost:3000/ad-space" width="300" height="580" scrolling="no" frameborder="0"></iframe>
+          </div>
+          <div class="doggos-deals">
+            <img src="/img/swaggerdog.gif">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Ad Section -->
 
   <!-- Footer -->
   <section id="footer">
@@ -346,6 +328,7 @@
   <!-- I WILL BLOCK THE RENDERING OF WHATS BELOW, BUT IT DOES NOT MATTER SINCE WERE DONE -->
   <!-- <script src="/crpdemojs.js"></script> -->
   <script src="./js/main.js"></script>
+  <script src="./js/cookiehandler.js" defer></script>
   <script src="./js/removedJsFile.js"></script>
 
 
