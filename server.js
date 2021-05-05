@@ -1,9 +1,13 @@
 const express = require("express");
+
 const fs = require("fs");
+
 const path = require("path");
+
 const dataPath = "./data/doggos.json";
 
 const server = express();
+
 const PORT = 3000;
 
 server.use(express.static(__dirname + "/public"));
@@ -21,13 +25,23 @@ server.use("/crpdemocss.css", (req, res, next) => {
 server.get("/crpdemojs.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/DEMOS/crpdemojs.js"));
 });
+
 server.get("/crpdemocss.css", (req, res) => {
   res.sendFile(path.join(__dirname + "/DEMOS/crpdemocss.css"));
 });
 
 /* END CRP demo */
 
+// LazyLoading demo, no need to touch,
+
+server.get("/lazydemo", (req, res) => {
+  res.sendFile(path.join(__dirname + "/DEMOS/lazyloadingdemo.html"));
+});
+
+// END LAZYLOADING demo
+
 // CODE SPLITTING demo, no need to touch,
+
 server.get("/codesplittingdemo", (req, res) => {
   res.sendFile(path.join(__dirname + "/DEMOS/codesplittingdemo/index.html"));
 });
@@ -36,11 +50,11 @@ server.get("/codesplittingdemo.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/DEMOS/codesplittingdemo/index.js"));
 });
 
-// END CODESPLITTING demo
-
 server.get("/codesplittingdemoapp.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/DEMOS/codesplittingdemo/app.js"));
 });
+
+// END CODESPLITTING demo
 
 server.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
