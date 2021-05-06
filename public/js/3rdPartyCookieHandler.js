@@ -1,7 +1,8 @@
 $("head").append(
   '<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">'
 );
-$("head").append(`
+setTimeout(function () {
+  $("head").append(`
     <style>
         #cookies {
             background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -39,7 +40,7 @@ $("head").append(`
     </style>
   `);
 
-$("body").prepend(`
+  $("body").prepend(`
 <section id="cookies">
 <div class="d-flex justify-content-center container">
   <div class="row">
@@ -57,6 +58,7 @@ $("body").prepend(`
 </div>
 </section>`);
 
-$("#cookiesokay").click(() => {
-  $("#cookies").css("display", "none");
-});
+  $("#cookiesokay").click(() => {
+    $("#cookies").css("display", "none");
+  });
+}, 2000);

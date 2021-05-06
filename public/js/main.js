@@ -28,51 +28,29 @@ menu_item.forEach((item) => {
   });
 });
 
-$(document).ready(function () {
-  if (Notification.permission === "granted") {
-    new Notification("Woff!");
-  } else if (Notification.permission === "denied") {
-    Notification.requestPermission().then((permission) => {
-      if (permission === "granted") {
-        new Notification("Woff!");
-      } else {
-        console.error("No permission for notifications");
-      }
+fetch("http://localhost:3000/doggos")
+  .then((response) => response.json())
+  .then((data) => {
+    let doggoHolder = document.querySelectorAll(".all-doggos")[0].innerHTML;
+    data.Doggos.forEach((doggo) => {
+      const doggoPerksElement = doggo.perks.map((perk) => ` ${perk}`);
+      const doggoBirthDay = moment(doggo.dateOfBirth).format("YYYY-MM-DD");
+      const doggoElement = `
+      <div class="doggos-item">
+          <div class="doggos-info">
+            <h1>${doggo.name}</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+        <p class="doggo-perks"><span>Perks: </span>${doggoPerksElement}</p>
+        <p class="doggo-birthday"><span>Birthday: </span>${doggoBirthDay}</p>
+      </div>
+          <div class="doggos-img">
+            <img src="${doggo.photo}">
+          </div>
+      </div>`;
+      doggoHolder = doggoHolder + doggoElement;
     });
-  } else {
-    Notification.requestPermission();
-  }
-
-  window.addEventListener("unload", function (event) {
-    console.log("Thanks for visiting doggo crew");
+    document.querySelectorAll(".all-doggos")[0].innerHTML = doggoHolder;
+  })
+  .catch((err) => {
+    console.warn("Something went wrong.", err);
   });
-
-  const showPosition = (position) => {
-    $(".lat").html("Latitude: " + position.coords.latitude);
-    $(".lng").html("Longitude: " + position.coords.longitude);
-  };
-
-  $.ajax({
-    url: "http://localhost:3000/doggos",
-    success: function (result) {
-      result.Doggos.forEach((doggo) => {
-        const doggoPerksElement = doggo.perks.map((perk) => ` ${perk}`);
-        const doggoBirthDay = moment(doggo.dateOfBirth).format("YYYY-MM-DD");
-        const doggoElement = `
-        <div class="doggos-item">
-          	<div class="doggos-info">
-          		<h1>${doggo.name}</h1>
-          		  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-				  <p class="doggo-perks"><span>Perks: </span>${doggoPerksElement}</p>
-          <p class="doggo-birthday"><span>Birthday: </span>${doggoBirthDay}</p>
-			  </div>
-          	<div class="doggos-img">
-          		<img src="${doggo.photo}">
-          	</div>
-        </div>`;
-        $(".all-doggos").append(doggoElement);
-      });
-      navigator.geolocation.getCurrentPosition(showPosition);
-    },
-  });
-});

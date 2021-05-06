@@ -367,7 +367,7 @@ p {
     padding: 2rem 0 2rem 0;
 }
 
-#ads .container div {
+#ads .container div  {
   display: flex;
   gap: 5rem;
 }
@@ -380,6 +380,17 @@ p {
 #ads .section-title {
 	color: white;
   margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+#ads .container div {
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  margin: auto;
+  max-width: 300px;
+}
 }
 
 /* End Deals section */
